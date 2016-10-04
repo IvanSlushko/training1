@@ -10,7 +10,7 @@ public class start {
 		System.out.println ("new 1 =" + r.i);
 		System.out.println ("new 2 =" + r.k); 		
 	}
-	
+	//counter plus one
 	private static int count (int x){
 		x = x + 1;
 		return x;
