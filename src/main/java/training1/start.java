@@ -1,26 +1,16 @@
 package training1;
 
-public class start {
+import javax.swing.JFrame;
 
-	public static void main(String[] args) {
-		Reader r= new Reader();
-		r.Scan();
-		r.i=count (r.i);
-		r.k=count (r.k);		
-		//System.out.println ("new 1 =" + r.i);
-		//System.out.println ("new 2 =" + r.k); 		
-		r.Scan (r.i,r.k);
-	
-	
-	
-	}
-	
-	//counter plus one
-	private static int count (int x){
-		x = x + 1;
-		return x;
+public class start {
+	public static void main (String args []){
+		Reader r = new Reader ("window name 666");
+		r.setVisible(true);  //set window visible
+		r.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//exit
+		r.setSize(300, 200);
+		r.setResizable(false);// don't resize window
+		r.setLocationRelativeTo(null);//in center 
+		
 		
 	}
-	
-	//end counter
 }
