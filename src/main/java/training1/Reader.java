@@ -1,5 +1,4 @@
 package training1;
-
 import javax.swing.JFrame;
 import javax.swing.*;
 import java.awt.*;
@@ -13,6 +12,7 @@ public class Reader extends JFrame {
 		JTextField t1,t2;
 		int i,k;
 		String a,b;
+		eHandler handler = new eHandler();
 		
 	public Reader (String s){
 		super(s);
@@ -33,8 +33,40 @@ public class Reader extends JFrame {
 		add(t2);
 		add(l3);
 		add(l4);
+		b2.addActionListener (handler);
+		b1.addActionListener (handler);
+
 	}
 	
+	public class eHandler implements ActionListener {
+
+		public void actionPerformed(ActionEvent e) {
+		  try {
+				
+			
+			
+			if (e.getSource()==b2) {
+				i = Integer.parseInt(t1.getText()); //str to integer
+				k = Integer.parseInt(t2.getText());
+				i++; //inkrement +1
+				k++;
+				a = "Ваше первое число теперь равно " +i;
+				b = "Ваше второе число теперь равно " +k;						
+				l3.setText(a); //output result
+				l4.setText(b);
+			}
+			if (e.getSource()==b1){
+				t1.setText(null);
+				t2.setText(null);
+				l3.setText("");
+				l4.setText("");
+			}
+		  }	catch(Exception ex) {JOptionPane.showMessageDialog (null, "input numeral!!!");}
+		}
+		
 	}
+	
+
+}
 
 
