@@ -37,7 +37,7 @@ public class writeNote extends JFrame {
 		t2= new JTextField (10); // номер в массиве на удаление
 		l1=new JLabel ("¬ведите запись:");
 		l2=new JLabel ("є в массиве дл€ удал. или коррекц.:");
-		JTextField textField;
+		//JTextField textField;
 		add (b1);
 		add (b2);
 		add (b3);
@@ -50,14 +50,11 @@ public class writeNote extends JFrame {
 		b1.addActionListener (handler);
 		b3.addActionListener (handler);
 		b4.addActionListener (handler);
-		
 	}
-	
 /**
  * создаем слушател€
  *
  */
-	
 	public class eHandler implements ActionListener {
 		
 		ArrayList<String> list = new ArrayList<String>();//создаем массив как поле класса
@@ -68,29 +65,20 @@ public class writeNote extends JFrame {
                 System.out.println(list.subList(0, list.size()));
                 t1.setText("");
 			}
-			
 			if (e.getSource()==b2){ //удалить
 				c = Integer.parseInt(t2.getText());
 				list.remove(c);
 				t2.setText("");
 			}
-			
 			if (e.getSource()==b3){ //редактировать
 				c = Integer.parseInt(t2.getText());
 				list.set(c, t1.getText());
 				t1.setText("");
 				t2.setText("");
 			}
-			
 			if (e.getSource()==b4){ //посмотреть
 				JOptionPane.showMessageDialog (null, list);
 			}
-		  
 		}
-		
 	}
-	
-	
-	
-	
 }
