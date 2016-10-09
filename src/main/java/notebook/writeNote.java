@@ -2,16 +2,12 @@ package notebook;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-
-import training1.Reader.eHandler;
 
 /**
  * 
@@ -20,6 +16,11 @@ import training1.Reader.eHandler;
  */
 public class writeNote extends JFrame {
 
+	/**
+	 * сериализация
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	JButton b1,b2,b3,b4;
 	JTextField t1,t2;
 	JLabel l1,l2;

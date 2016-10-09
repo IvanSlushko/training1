@@ -3,10 +3,13 @@ import javax.swing.JFrame;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-//gui and JFrame
+//JFrame
 
 public class Reader extends JFrame {
 
+
+	private static final long serialVersionUID = 1L;
+	
 		JButton b1,b2;
 		JLabel l1,l2,l3,l4;
 		JTextField t1,t2;
