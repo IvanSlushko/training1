@@ -1,19 +1,20 @@
-package collection;
+package kanctovar;
 
-public class Mobile {
-	private int number;
+public class Kanctovar {
+
 	private String name;
+	private int price;	
 	
 	//создадим конструктор
-	public Mobile  (int number, String name) {
+	public Kanctovar  (String name, int price) {
 		this.name=name;
-		this.number=number;
+		this.price=price;
 	}
 	public int getNumber() {
-		return number;
+		return price;
 	}
-	public void setNumber(int number) {
-		this.number = number;
+	public void setNumber(int price) {
+		this.price = price;
 	}
 	public String getName() {
 		return name;
