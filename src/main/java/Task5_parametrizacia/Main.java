@@ -6,7 +6,7 @@ public class Main {
 
 		ImessageImpl imessage = new ImessageImpl();
 
-		for (Message message : imessage.getAll()) {
+		for (Message message : imessage.getAlll()) {
 			System.out.println(message.getMessage());
 
 		}

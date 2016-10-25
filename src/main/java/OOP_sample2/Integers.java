@@ -6,7 +6,6 @@ public class Integers implements Runnable {
 	private String num = "";
 	private boolean isRuning = true;
 
-	@Override
 	public void run() {
 		while (isRuning) {
 			try {

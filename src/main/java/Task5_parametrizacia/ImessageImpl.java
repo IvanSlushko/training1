@@ -6,10 +6,9 @@ import java.util.List;
 public class ImessageImpl implements I<Message> {
 	
 	
-	@Override
 	public List<Message> getAll() {
 		
-		List<Message> result = new ArrayList<>();
+		List<Message> result = new ArrayList<Message>();
 		
 		for (int i = 0; i < 10; i++) {
 			Message message = new Message();
@@ -20,6 +19,11 @@ public class ImessageImpl implements I<Message> {
 		return result;
 
 
+	}
+
+	public List<Message> getAlll() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

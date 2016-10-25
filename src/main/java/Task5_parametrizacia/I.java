@@ -5,6 +5,8 @@ import java.util.List;
 public interface I <T extends Base>{
 
 	
-	public List<T> getAll();
+	public List<T> getAlll();
+
+	List<Message> getAll();
 	
 }
